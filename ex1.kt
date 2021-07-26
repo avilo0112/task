@@ -1,8 +1,12 @@
+import kotlin.random.Random
+
 fun main() {
-    println("Введите имя: ")
-    val s = readLine()
-    if (s == "Вячеслав")
-        println("Привет, Вячеслав")
+    val s: String = "number: "
+    val i: Int = Random.nextInt(1,10)
+    println(i)
+
+    val v = if (i > 7)
+        println("Привет")
     else
-        println("Нет такого имени")
+        println("")
 }
